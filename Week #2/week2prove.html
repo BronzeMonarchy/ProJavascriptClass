@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Adding Numbers</title>
+    <script>    
+        function calculate() {
+           var n1 = document.getElementById("number1").value;
+           var n2 = document.getElementById("number2").value;
+            var answer = n1 - -n2;
+            document.getElementById("result").innerHTML = answer;
+        }
+    </script>
+</head>
+<body>
+    <p> Let's add two numbers. Please enter the numbers you wish to add in the respective boxes.</p>
+    <input id="number1" type="number"> + <input id="number2" type="number"> = <p id="result">______ </p>
+    <p></p>
+    <button onclick="calculate()">Calculate</button>
+    
+    </body>
+</html>
